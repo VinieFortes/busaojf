@@ -25,7 +25,7 @@
           <span>Feito por Vinie Fortes</span>
           <a href="https://github.com/VinieFortes" style="font-size: 16px" class="fa fa-github text-black"></a>
         </div>
-        <span>Ultima Atualização dos horários: 18/06/2022</span>
+        <span>Ultima Atualização dos horários: Junho de 2022</span>
       </div>
     </q-drawer>
 
