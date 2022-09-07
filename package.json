@@ -7,7 +7,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
-    "run": "quasar dev"
+    "run": "quasar dev",
+    "dev:android": "quasar dev -m android --ide",
+    "build:android": "quasar build -m android --ide"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

@@ -14,7 +14,6 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^10.1.2",
-    "cordova-plugin-navigationbar-color": "^0.1.0",
     "cordova-plugin-statusbar": "^3.0.0"
   },
   "cordova": {
@@ -22,8 +21,7 @@
       "android"
     ],
     "plugins": {
-      "cordova-plugin-statusbar": {},
-      "cordova-plugin-navigationbar-color": {}
+      "cordova-plugin-statusbar": {}
     }
   }
 }

@@ -14,6 +14,24 @@
     <q-drawer elevated  v-model="rightDrawerOpen" side="left" bordered class="flex column">
       <q-img src="../assets/art.png"></q-img>
       <div class="flex column">
+        <span class="q-pa-sm">Tamanho fonte do Texto</span>
+        <q-slider
+          class="q-pa-sm"
+          v-model="tamanhoTexto"
+          markers
+          marker-labels
+          :min="1"
+          :max="3"
+          @update:model-value="newTamText"
+        >
+          <template v-slot:marker-label-group="{ markerMap }">
+              <q-badge v-if="tamanhoTexto === 1" color="primary" style="font-size: 16px; font-weight: bold; padding: 5px">00:00</q-badge>
+              <q-badge v-if="tamanhoTexto === 2" color="primary" style="font-size: 18px; font-weight: bold; padding: 5px">00:00</q-badge>
+              <q-badge v-if="tamanhoTexto === 3" color="primary" style="font-size: 22px; font-weight: bold; padding: 5px">00:00</q-badge>
+          </template>
+        </q-slider>
+      </div>
+      <div class="flex column">
         <span class="q-pa-sm">Gostou do App ? Então avalie-o na Play Store!</span>
         <a style="text-decoration: none" href="https://play.google.com/store/apps/details?id=com.vinie4app.busaojf" class="flex">
           <q-btn style="flex: 1" color="primary" icon="reviews" label="Avaliar"></q-btn>
@@ -23,14 +41,15 @@
       <div class="flex justify-end q-pa-sm">
         <div class="row items-center q-gutter-x-sm flex">
           <span>Feito por Vinie Fortes</span>
-          <a href="https://github.com/VinieFortes" style="font-size: 16px" class="fa fa-github text-black"></a>
+          <a href="https://github.com/VinieFortes">
+            <q-icon  style="font-size: 16px" class="fa fa-github text-black"></q-icon>
+          </a>
         </div>
-        <span>Ultima Atualização dos horários: Junho de 2022</span>
       </div>
+      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Setembro de 2022</span>
     </q-drawer>
 
     <q-page-container>
-
 
       <q-card v-if="pesquisaText" class="q-mt-sm flex column">
         <q-card-section class="no-padding flex justify-center">
@@ -104,9 +123,36 @@ export default defineComponent({
       StatusBar.backgroundColorByHexString("#FFFFFF");
       StatusBar.styleDefault()
     }
+    if(window.localStorage.getItem('tam_txt')){
+      switch (window.localStorage.getItem('tam_txt')){
+        case '16':
+          this.tamanhoTexto = 1;
+          break;
+        case '18':
+          this.tamanhoTexto = 2;
+          break;
+        case '22':
+          this.tamanhoTexto = 3;
+          break;
+      }
+
+    }
   },
 
   methods:{
+    newTamText(){
+      switch (this.tamanhoTexto){
+        case 1:
+          window.localStorage.setItem('tam_txt', '16');
+          break;
+        case 2:
+          window.localStorage.setItem('tam_txt', '18');
+          break;
+        case 3:
+          window.localStorage.setItem('tam_txt', '22');
+          break;
+      }
+    },
     searchEngine(){
       let newArray: { numero: number; nome: string; H_ida: { semana: string[]; sabado: string[]; domingo: string[] }[]; H_volta: { semana: string[]; sabado: string[]; domingo: string[] }[]; intinerario: { ida: string; volta: string }[] }[][] = []
       dados.forEach(linha =>{
@@ -174,6 +220,7 @@ export default defineComponent({
    let dadosLocalStorage = [];
    let showBar = false;
    let focusSerachBar = false;
+   let tamanhoTexto = 1;
 
     if(window.localStorage.getItem('favoritos')){
       dadosLocalStorage = JSON.parse(window.localStorage.getItem('favoritos') as string);
@@ -197,6 +244,7 @@ export default defineComponent({
       pesquisaText: ref(''),
       showSearch: showBar,
       focusSearchBar: focusSerachBar,
+      tamanhoTexto: tamanhoTexto
     }
   }
 })

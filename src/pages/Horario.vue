@@ -14,7 +14,7 @@
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Dias úteis</span>
         <q-card-section class="q-pa-sm flex column items-center justify-center">
             <td class="td q-gutter-sm">
-              <q-badge :color="badgeColor" style="font-size: 15px; font-weight: bold" v-for="horario in h_ida_semana">{{horario}}</q-badge>
+              <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_ida_semana">{{horario}}</q-badge>
             </td>
         </q-card-section>
       </q-card>
@@ -23,7 +23,7 @@
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Sábados</span>
         <q-card-section class="q-pa-sm flex column items-center justify-center">
           <td class="td q-gutter-sm">
-            <q-badge :color="badgeColor" style="font-size: 15px; font-weight: bold" v-for="horario in h_ida_sabado">{{horario}}</q-badge>
+            <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_ida_sabado">{{horario}}</q-badge>
           </td>
         </q-card-section>
       </q-card>
@@ -32,7 +32,7 @@
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Domingos e Feriados</span>
         <q-card-section class="q-pa-sm flex column items-center justify-center">
           <td class="td q-gutter-sm">
-            <q-badge :color="badgeColor" style="font-size: 15px; font-weight: bold" v-for="horario in h_ida_domingo">{{horario}}</q-badge>
+            <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_ida_domingo">{{horario}}</q-badge>
           </td>
         </q-card-section>
       </q-card>
@@ -43,7 +43,7 @@
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Dias úteis</span>
         <q-card-section class="q-pa-sm flex column items-center justify-center">
           <td class="td q-gutter-sm">
-            <q-badge :color="badgeColor" style="font-size: 15px; font-weight: bold" v-for="horario in h_volta_semana">{{horario}}</q-badge>
+            <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_volta_semana">{{horario}}</q-badge>
           </td>
         </q-card-section>
       </q-card>
@@ -52,7 +52,7 @@
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Sábados</span>
         <q-card-section class="q-pa-sm flex column items-center justify-center">
           <td class="td q-gutter-sm">
-            <q-badge :color="badgeColor" style="font-size: 16px; font-weight: bold" v-for="horario in h_volta_sabado">{{horario}}</q-badge>
+            <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_volta_sabado">{{horario}}</q-badge>
           </td>
         </q-card-section>
       </q-card>
@@ -61,7 +61,7 @@
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Domingos e Feriados</span>
         <q-card-section class="q-pa-sm flex column items-center justify-center">
           <td class="td q-gutter-sm">
-            <q-badge :color="badgeColor" style="font-size: 15px; font-weight: bold" v-for="horario in h_volta_domingo">{{horario}}</q-badge>
+            <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_volta_domingo">{{horario}}</q-badge>
           </td>
         </q-card-section>
       </q-card>
@@ -127,12 +127,20 @@ export default {
       dadosLocalStorage = JSON.parse(window.localStorage.getItem('favoritos'));
       dadosLocalStorage.includes(this.linha) === true ? this.isFavorito = true : this.isFavorito = false;
     }
+    let tam_num = 1;
+    if(window.localStorage.getItem('tam_txt')){
+      tam_num = parseInt(window.localStorage.getItem('tam_txt'));
+    }else {
+      tam_num = '16'
+    }
+    this.tamanhoTexto = tam_num;
   },
 
   data(){
     let linha = ''
     linha = this.$route.query.linha;
     let nome = ''
+    let tamanhoTexto = null
     let h_ida_semana = null
     let h_ida_sabado = null
     let h_ida_domingo = null
@@ -215,6 +223,7 @@ export default {
       headerColor: headerColor,
       badgeColor: badgeColor,
       isFavorito: isFavorito,
+      tamanhoTexto: tamanhoTexto,
       showNotif (fav, linha) {
         if(fav){
           $q.notify({
