@@ -25,9 +25,9 @@
           @update:model-value="newTamText"
         >
           <template v-slot:marker-label-group="{ markerMap }">
-              <q-badge v-if="tamanhoTexto === 1" color="primary" style="font-size: 16px; font-weight: bold; padding: 5px">00:00</q-badge>
-              <q-badge v-if="tamanhoTexto === 2" color="primary" style="font-size: 18px; font-weight: bold; padding: 5px">00:00</q-badge>
-              <q-badge v-if="tamanhoTexto === 3" color="primary" style="font-size: 22px; font-weight: bold; padding: 5px">00:00</q-badge>
+            <q-badge v-if="tamanhoTexto === 1" color="primary" style="font-size: 16px; font-weight: bold; padding: 5px">00:00</q-badge>
+            <q-badge v-if="tamanhoTexto === 2" color="primary" style="font-size: 18px; font-weight: bold; padding: 5px">00:00</q-badge>
+            <q-badge v-if="tamanhoTexto === 3" color="primary" style="font-size: 22px; font-weight: bold; padding: 5px">00:00</q-badge>
           </template>
         </q-slider>
       </div>
@@ -38,15 +38,19 @@
         </a>
       </div>
       <q-space/>
-      <div class="flex justify-end q-pa-sm">
-        <div class="row items-center q-gutter-x-sm flex">
+      <span class="q-pa-sm">Acesse nosso site:</span>
+      <q-btn color="primary" label="Busão Nacional" icon="directions_bus" @click="goToSite">
+
+      </q-btn>
+      <div class="flex justify-end items-end column q-pa-sm">
+        <div class="items-end q-gutter-x-sm">
           <span>Feito por Vinie Fortes</span>
           <a href="https://github.com/VinieFortes">
             <q-icon  style="font-size: 16px" class="fa fa-github text-black"></q-icon>
           </a>
         </div>
       </div>
-      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Setembro de 2022</span>
+      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Novembro de 2023</span>
     </q-drawer>
 
     <q-page-container>
@@ -114,10 +118,21 @@ import dados from "assets/output.json"
 export default defineComponent({
   name: 'MainLayout',
 
-  components: {
-  },
+  components: {},
 
   mounted() {
+    const admobid = {
+      banner: 'ca-app-pub-9515612908682608/2557703352', // or DFP format "/6253334/dfp_example_ad"
+      interstitial: 'ca-app-pub-9515612908682608/2480793995'
+    };
+
+    if(AdMob){} AdMob.createBanner({
+      adId: admobid.banner,
+      position: AdMob.AD_POSITION.BOTTOM_CENTER,
+      autoShow: true });
+
+    if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
+
     if (cordova.platformId == 'android') {
       StatusBar.overlaysWebView(false);
       StatusBar.backgroundColorByHexString("#FFFFFF");
@@ -135,11 +150,13 @@ export default defineComponent({
           this.tamanhoTexto = 3;
           break;
       }
-
     }
   },
 
   methods:{
+    goToSite(){
+      window.open('https://busaonacional.com.br', '_blank')
+    },
     newTamText(){
       switch (this.tamanhoTexto){
         case 1:
@@ -215,12 +232,12 @@ export default defineComponent({
 
 
   data() {
-   const favoritos = window.localStorage.getItem('favoritos');
-   let listaFavoritos: { numero: number; nome: string }[] = [];
-   let dadosLocalStorage = [];
-   let showBar = false;
-   let focusSerachBar = false;
-   let tamanhoTexto = 1;
+    const favoritos = window.localStorage.getItem('favoritos');
+    let listaFavoritos: { numero: number; nome: string }[] = [];
+    let dadosLocalStorage = [];
+    let showBar = false;
+    let focusSerachBar = false;
+    let tamanhoTexto = 1;
 
     if(window.localStorage.getItem('favoritos')){
       dadosLocalStorage = JSON.parse(window.localStorage.getItem('favoritos') as string);
@@ -228,7 +245,7 @@ export default defineComponent({
         dados.forEach(linha=>{
           linha.forEach(item =>{
             if(item.numero === parseInt(dado)){
-               listaFavoritos.push({numero: item.numero, nome: item.nome})
+              listaFavoritos.push({numero: item.numero, nome: item.nome})
             }
           })
         })

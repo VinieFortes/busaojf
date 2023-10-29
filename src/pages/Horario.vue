@@ -9,13 +9,13 @@
     </q-header>
 
     <q-page-container class="q-mb-md">
-      <span class="q-mt-md flex justify-center" style="flex: 1; font-size: 16px; font-weight: bold;">Saída de {{nome.split('/')[0]}}</span>
+      <span class="q-mt-md flex justify-center" style="flex: 1; font-size: 16px; font-weight: bold;">Saída de {{ generateNomeLinha(nome, 0, linha)}}</span>
       <q-card style="border-top-right-radius: 6px; border-top-left-radius: 6px" class="q-mt-sm flex column">
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Dias úteis</span>
         <q-card-section class="q-pa-sm flex column items-center justify-center">
-            <td class="td q-gutter-sm">
-              <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_ida_semana">{{horario}}</q-badge>
-            </td>
+          <td class="td q-gutter-sm">
+            <q-badge :color="badgeColor" :style="{fontSize: tamanhoTexto + 'px', fontWeight: 'bold', padding: '5px'}" v-for="horario in h_ida_semana">{{horario}}</q-badge>
+          </td>
         </q-card-section>
       </q-card>
 
@@ -37,7 +37,7 @@
         </q-card-section>
       </q-card>
 
-      <span class="q-mt-md flex justify-center" style="flex: 1; font-size: 16px; font-weight: bold;">Saída de {{!nome.split('/')[1] ? 'Centro' : nome.split('/')[1]}}</span>
+      <span class="q-mt-md flex justify-center" style="flex: 1; font-size: 16px; font-weight: bold;">Saída de {{ generateNomeLinha(nome, 1, linha)}}</span>
 
       <q-card style="border-top-right-radius: 6px; border-top-left-radius: 6px" class="q-mt-sm flex column">
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Dias úteis</span>
@@ -99,6 +99,23 @@ export default {
   name: "Horario",
 
   methods: {
+    generateNomeLinha(nome, index, linha){
+      switch (index){
+        case 0:
+          if(parseInt(linha) === 115){
+            return nome.split('/')[1];
+          }else{
+            return nome.split('/')[0];
+          }
+        case 1:
+          if(parseInt(linha) === 115){
+            return nome.split('/')[0];
+          }else{
+            return !nome.split('/')[1] ? 'Centro' : nome.split('/')[1]
+          }
+      }
+
+    },
     showInti(){
       this.showDialog = true
     },
@@ -122,6 +139,14 @@ export default {
   },
 
   mounted() {
+    if(this.$adShow === false){
+      if(AdMob) AdMob.showInterstitial( (success)=>{
+        if(success){
+          this.$adShow = true;
+        }
+      });
+    }
+
     let dadosLocalStorage = [];
     if(window.localStorage.getItem('favoritos')){
       dadosLocalStorage = JSON.parse(window.localStorage.getItem('favoritos'));
@@ -188,23 +213,23 @@ export default {
 
     dados.forEach(item=>{
       item.forEach((el)=>{
-       if(parseInt(linha) === el.numero){
-         nome = el.nome
-         el.H_ida.forEach(ida =>{
-           h_ida_semana = ida.semana
-           h_ida_sabado = ida.sabado
-           h_ida_domingo = ida.domingo
-         })
-         el.H_volta.forEach(volta =>{
-           h_volta_semana = volta.semana
-           h_volta_sabado = volta.sabado
-           h_volta_domingo = volta.domingo
-         })
-         el.intinerario.forEach(int =>{
-           int_ida = int.ida
-           int_volta = int.volta
-         })
-       }
+        if(parseInt(linha) === el.numero){
+          nome = el.nome
+          el.H_ida.forEach(ida =>{
+            h_ida_semana = ida.semana
+            h_ida_sabado = ida.sabado
+            h_ida_domingo = ida.domingo
+          })
+          el.H_volta.forEach(volta =>{
+            h_volta_semana = volta.semana
+            h_volta_sabado = volta.sabado
+            h_volta_domingo = volta.domingo
+          })
+          el.intinerario.forEach(int =>{
+            int_ida = int.ida
+            int_volta = int.volta
+          })
+        }
       })
     })
 
@@ -251,6 +276,6 @@ export default {
 <style scoped>
 .td{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr); /* Cada linha terá 5 colunas */
 }
 </style>

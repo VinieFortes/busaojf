@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="8" id="com.vinie4app.busaojf" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="28" id="com.vinie4app.busaojf" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Busão JF</name>
     <description>A Quasar Framework app</description>
-    <author email="vinie4apps@gmail.com">
-      Vinícius da Silva Fortes
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
     </author>
-    <icon density="mdpi" height="57" platform="android" src="../src/assets/icon.png" width="57" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="../src/assets/splash_foreground.xml" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#1976D2" />
     <content src="index.html" />
-    <allow-navigation href="*" />
-    <allow-intent href="*" />
-    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
     <allow-navigation href="about:*" />
 </widget>
