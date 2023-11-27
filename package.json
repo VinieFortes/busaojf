@@ -9,7 +9,10 @@
     "test": "echo \"No test specified\" && exit 0",
     "run": "quasar dev",
     "dev:android": "quasar dev -m android --ide",
-    "build:android": "quasar build -m android --ide"
+    "build:android": "quasar build -m android --ide",
+    "dev:ios": "quasar dev -m cordova -T ios",
+    "build:ios": "quasar build -m cordova -T ios",
+    "update:ios": "quasar build -m cordova -T ios --skip-pkg"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

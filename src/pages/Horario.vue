@@ -71,6 +71,7 @@
     <q-dialog v-model="showDialog">
       <q-card class="q-dialog-plugin">
         <div class="flex items-center justify-center q-gutter-x-sm row q-pa-sm">
+          <q-btn flat icon="arrow_back_ios" @click="showDialog = false"></q-btn>
           <q-icon style="flex: 0" size="23px" name="directions"></q-icon>
           <span style="font-weight: bold; font-size: 16px; flex: 1" >Itinerário {{linha}} - {{nome}}</span>
         </div>
@@ -187,7 +188,7 @@ export default {
     if(linha < 300){
       headerColor = '#1976D2';
       badgeColor = 'primary'
-      if (cordova.platformId === 'android') {
+      if (cordova.platformId === 'android' || cordova.platformId === "ios") {
         StatusBar.overlaysWebView(false);
         StatusBar.styleBlackTranslucent()
         StatusBar.backgroundColorByHexString("#1976D2");
@@ -196,7 +197,7 @@ export default {
     else if(linha > 300 && linha < 600){
       headerColor = '#C10015';
       badgeColor = 'negative'
-      if (cordova.platformId === 'android') {
+      if (cordova.platformId === 'android' || cordova.platformId === "ios") {
         StatusBar.overlaysWebView(false);
         StatusBar.styleBlackTranslucent()
         StatusBar.backgroundColorByHexString("#C10015");
@@ -204,7 +205,7 @@ export default {
     }else{
       headerColor = '#26A69A';
       badgeColor = 'secondary'
-      if (cordova.platformId === 'android') {
+      if (cordova.platformId === 'android' || cordova.platformId === "ios") {
         StatusBar.overlaysWebView(false);
         StatusBar.styleBlackTranslucent()
         StatusBar.backgroundColorByHexString("#26A69A");

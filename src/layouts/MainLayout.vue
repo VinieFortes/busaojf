@@ -121,19 +121,40 @@ export default defineComponent({
   components: {},
 
   mounted() {
-    const admobid = {
-      banner: 'ca-app-pub-9515612908682608/2557703352', // or DFP format "/6253334/dfp_example_ad"
-      interstitial: 'ca-app-pub-9515612908682608/2480793995'
-    };
-
-    if(AdMob){} AdMob.createBanner({
-      adId: admobid.banner,
-      position: AdMob.AD_POSITION.BOTTOM_CENTER,
-      autoShow: true });
-
-    if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
-
     if (cordova.platformId == 'android') {
+
+      const admobid = {
+        banner: 'ca-app-pub-9515612908682608/2557703352', // or DFP format "/6253334/dfp_example_ad"
+        interstitial: 'ca-app-pub-9515612908682608/2480793995'
+      };
+
+      if(AdMob){} AdMob.createBanner({
+        adId: admobid.banner,
+        position: AdMob.AD_POSITION.BOTTOM_CENTER,
+        autoShow: true });
+
+      if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
+
+      StatusBar.overlaysWebView(false);
+      StatusBar.backgroundColorByHexString("#FFFFFF");
+      StatusBar.styleDefault()
+    }
+
+
+    if (cordova.platformId == 'ios') {
+
+      const admobid = {
+        banner: 'ca-app-pub-9515612908682608/1851745519', // or DFP format "/6253334/dfp_example_ad"
+        interstitial: 'ca-app-pub-9515612908682608/8766290614'
+      };
+
+      if(AdMob){} AdMob.createBanner({
+        adId: admobid.banner,
+        position: AdMob.AD_POSITION.BOTTOM_CENTER,
+        autoShow: true });
+
+      if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
+
       StatusBar.overlaysWebView(false);
       StatusBar.backgroundColorByHexString("#FFFFFF");
       StatusBar.styleDefault()

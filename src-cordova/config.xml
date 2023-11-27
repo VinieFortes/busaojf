@@ -5,9 +5,19 @@
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <icon density="mdpi" height="1024" platform="ios" src="../src/assets/icon.png" width="1024" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="deployment-target" value="17.0" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="AndroidWindowSplashScreenAnimatedIcon" value="../src/assets/splash_foreground.xml" />
     <preference name="AndroidWindowSplashScreenBackground" value="#1976D2" />
+    <edit-config file="*-Info.plist" mode="merge" target="UIStatusBarHidden">
+        <false />
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="UIViewControllerBasedStatusBarAppearance">
+        <true />
+    </edit-config>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
