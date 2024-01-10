@@ -128,7 +128,7 @@ module.exports = configure(function (ctx) {
     },
 
     bin: {
-      linuxAndroidStudio: "/snap/android-studio/current/android-studio/bin/studio.sh"
+      linuxAndroidStudio: "/snap/bin/android-studio"
     },
 
     // https://quasar.dev/quasar-cli/developing-pwa/configuring-pwa

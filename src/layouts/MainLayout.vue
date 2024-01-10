@@ -50,7 +50,7 @@
           </a>
         </div>
       </div>
-      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Novembro de 2023</span>
+      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Janeiro de 2024</span>
     </q-drawer>
 
     <q-page-container>

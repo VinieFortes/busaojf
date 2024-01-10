@@ -1,12 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="28" id="com.vinie4app.busaojf" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="32" id="com.vinie4app.busaojf" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Busão JF</name>
     <description>A Quasar Framework app</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <icon density="mdpi" height="1024" platform="ios" src="../src/assets/icon.png" width="1024" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="deployment-target" value="17.0" />
     <preference name="AutoHideSplashScreen" value="true" />
