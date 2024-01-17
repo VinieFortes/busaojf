@@ -1,5 +1,5 @@
 <template>
-  <q-layout>
+  <q-layout class="q-mb-xl">
     <q-header :style="{backgroundColor: headerColor}"  class="q-pa-sm flex row items-center text-white no-wrap">
       <q-icon class="q-pa-sm" v-ripple size="25px" name="arrow_back" style="cursor: pointer; flex: 0" @click="this.$router.back()"></q-icon>
       <span class="q-pl-md" style="font-size: 22px; flex: 1; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{linha}} - {{ nome }}</span>

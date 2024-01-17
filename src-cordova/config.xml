@@ -5,9 +5,9 @@
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
-    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="deployment-target" value="17.0" />
+    <preference name="deployment-target" value="13.0" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="AndroidWindowSplashScreenAnimatedIcon" value="../src/assets/splash_foreground.xml" />
     <preference name="AndroidWindowSplashScreenBackground" value="#1976D2" />

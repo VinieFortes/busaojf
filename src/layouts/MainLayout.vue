@@ -1,6 +1,6 @@
 <template>
-  <q-layout>
-    <q-header class="q-pa-sm flex row items-center bg-white text-black">
+  <q-layout class="q-mt-xl q-mb-xl">
+    <q-header class="q-pa-sm flex row items-center bg-white text-black no-wrap">
       <q-icon class="q-pa-sm" size="25px" name="menu" style="cursor: pointer" @click="toggleLeftDrawer"></q-icon>
       <span class="q-pl-md" v-if="!focusSearchBar" style="flex: 1; font-size: 22px">Busão JF</span>
       <q-icon @click="showSearchBar" style="cursor: pointer" class="q-animate--scale" v-if="showSearch === false" size="sm" name="search"></q-icon>
@@ -31,7 +31,7 @@
           </template>
         </q-slider>
       </div>
-      <div class="flex column">
+      <div class="q-mb-xl flex column">
         <span class="q-pa-sm">Gostou do App ? Então avalie-o na Play Store!</span>
         <a style="text-decoration: none" href="https://play.google.com/store/apps/details?id=com.vinie4app.busaojf" class="flex">
           <q-btn style="flex: 1" color="primary" icon="reviews" label="Avaliar"></q-btn>
@@ -53,7 +53,7 @@
       <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Janeiro de 2024</span>
     </q-drawer>
 
-    <q-page-container>
+    <q-page-container class="q-mb-md">
 
       <q-card v-if="pesquisaText" class="q-mt-sm flex column">
         <q-card-section class="no-padding flex justify-center">
@@ -155,7 +155,7 @@ export default defineComponent({
 
       if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
 
-      StatusBar.overlaysWebView(false);
+      StatusBar.overlaysWebView(true);
       StatusBar.backgroundColorByHexString("#FFFFFF");
       StatusBar.styleDefault()
     }

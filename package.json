@@ -10,7 +10,7 @@
     "run": "quasar dev",
     "dev:android": "quasar dev -m android --ide",
     "build:android": "quasar build -m android --ide",
-    "dev:ios": "quasar dev -m cordova -T ios",
+    "dev:ios": "quasar dev -m cordova -T ios -e iPhone-15-Pro-Max",
     "build:ios": "quasar build -m cordova -T ios",
     "update:ios": "quasar build -m cordova -T ios --skip-pkg"
   },
