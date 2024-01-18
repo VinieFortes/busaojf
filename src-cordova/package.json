@@ -26,14 +26,12 @@
     "plugins": {
       "cordova-plugin-statusbar": {},
       "cordova-plugin-admobpro": {
-        "ADMOB_ANDROID_APP_ID": "ca-app-pub-9515612908682608~9752610553",
         "ADMOB_IOS_APP_ID": "ca-app-pub-9515612908682608~1291125275",
         "DISABLESDKCRASHREPORTING": "false"
       }
     }
   },
   "dependencies": {
-    "cordova-plugin-admobpro": "8.13.1",
     "cordova-plugin-extension": "1.6.0",
     "ios-sim": "^9.0.0-dev.4"
   }

@@ -8,7 +8,7 @@
       <q-icon v-else @click="favoritar" v-ripple size="25px" name="star"></q-icon>
     </q-header>
 
-    <q-page-container class="q-mb-md">
+    <q-page-container style="background-color: rgba(142, 142, 147, 0.1)" class="q-mb-xl q-pr-sm q-pl-sm">
       <span class="q-mt-md flex justify-center" style="flex: 1; font-size: 16px; font-weight: bold;">Saída de {{ generateNomeLinha(nome, 0, linha)}}</span>
       <q-card style="border-top-right-radius: 6px; border-top-left-radius: 6px" class="q-mt-sm flex column">
         <span class="q-mb-sm text-white text-center" :style="{fontSize: '16px', fontWeight: 'bold', backgroundColor: headerColor, flex: '1', borderTopRightRadius: '6px', borderTopLeftRadius: '6px'}">Dias úteis</span>

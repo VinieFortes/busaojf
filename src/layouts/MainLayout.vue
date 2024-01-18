@@ -1,6 +1,6 @@
 <template>
-  <q-layout class="q-mt-xl q-mb-xl">
-    <q-header class="q-pa-sm flex row items-center bg-white text-black no-wrap">
+  <q-layout view="hHh lpR fFf" class="q-mb-xl">
+    <q-header  class="q-pa-sm flex row items-center bg-white text-black no-wrap">
       <q-icon class="q-pa-sm" size="25px" name="menu" style="cursor: pointer" @click="toggleLeftDrawer"></q-icon>
       <span class="q-pl-md" v-if="!focusSearchBar" style="flex: 1; font-size: 22px">Busão JF</span>
       <q-icon @click="showSearchBar" style="cursor: pointer" class="q-animate--scale" v-if="showSearch === false" size="sm" name="search"></q-icon>
@@ -12,7 +12,6 @@
     </q-header>
 
     <q-drawer elevated  v-model="rightDrawerOpen" side="left" bordered class="flex column">
-      <q-img src="../assets/art.png"></q-img>
       <div class="flex column">
         <span class="q-pa-sm">Tamanho fonte do Texto</span>
         <q-slider
@@ -50,7 +49,7 @@
           </a>
         </div>
       </div>
-      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Janeiro de 2024</span>
+      <span class="q-mb-xl q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Janeiro de 2024</span>
     </q-drawer>
 
     <q-page-container class="q-mb-md">
@@ -63,8 +62,8 @@
           </div>
         </q-card-section>
         <q-card-section>
-          <q-list v-for="(linha) in searchEngine()" class="q-mb-sm" bordered separator>
-            <q-item @click="this.$router.push({path: '/Horario', query: {linha: showNumber(linha)}})" class="q-gutter-x-sm" clickable v-ripple>
+          <q-list v-for="(linha) in searchEngine()" class="q-mb-sm"  style="border-radius: 16px" separator>
+            <q-item style="border-radius: 16px; background-color: rgba(142, 142, 147, 0.2)" @click="this.$router.push({path: '/Horario', query: {linha: showNumber(linha)}})" class="q-gutter-x-sm" clickable v-ripple>
               <q-badge :color="colorBus(linha)">{{showNumber(linha)}}</q-badge>
               <q-item-section>{{ showName(linha) }}</q-item-section>
             </q-item>
@@ -80,8 +79,8 @@
           </div>
         </q-card-section>
         <q-card-section>
-          <q-list v-for="(linha) in listaFav" class="q-mb-sm" bordered separator>
-            <q-item @click="this.$router.push({path: '/Horario', query: {linha: linha.numero}})" class="q-gutter-x-sm" clickable v-ripple>
+          <q-list v-for="(linha) in listaFav" class="q-mb-sm"  style="border-radius: 16px" separator>
+            <q-item style="border-radius: 16px; background-color: rgba(142, 142, 147, 0.2)" @click="this.$router.push({path: '/Horario', query: {linha: linha.numero}})" class="q-gutter-x-sm" clickable v-ripple>
               <q-badge :color="colorBus(linha, true)" >{{linha.numero}}</q-badge>
               <q-item-section>{{ linha.nome }}</q-item-section>
             </q-item>
@@ -97,8 +96,8 @@
           </div>
         </q-card-section>
         <q-card-section>
-          <q-list v-for="(linha) in json" class="q-mb-sm" bordered separator>
-            <q-item @click="this.$router.push({path: '/Horario', query: {linha: showNumber(linha)}})" class="q-gutter-x-sm" clickable v-ripple>
+          <q-list v-for="(linha) in json" class="q-mb-sm" style="border-radius: 16px" separator>
+            <q-item style="border-radius: 16px; background-color: rgba(142, 142, 147, 0.2)" @click="this.$router.push({path: '/Horario', query: {linha: showNumber(linha)}})" class="q-gutter-x-sm" clickable v-ripple>
               <q-badge :color="colorBus(linha)">{{showNumber(linha)}}</q-badge>
               <q-item-section>{{ showName(linha) }}</q-item-section>
             </q-item>
@@ -143,19 +142,7 @@ export default defineComponent({
 
     if (cordova.platformId == 'ios') {
 
-      const admobid = {
-        banner: 'ca-app-pub-9515612908682608/1851745519', // or DFP format "/6253334/dfp_example_ad"
-        interstitial: 'ca-app-pub-9515612908682608/8766290614'
-      };
-
-      if(AdMob){} AdMob.createBanner({
-        adId: admobid.banner,
-        position: AdMob.AD_POSITION.BOTTOM_CENTER,
-        autoShow: true });
-
-      if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
-
-      StatusBar.overlaysWebView(true);
+      StatusBar.overlaysWebView(false);
       StatusBar.backgroundColorByHexString("#FFFFFF");
       StatusBar.styleDefault()
     }
@@ -228,7 +215,7 @@ export default defineComponent({
     colorBus(linha: { numero: number; forEach: (arg0: (item: any) => void) => void }, isFav: any){
       let color = null
       if(isFav){
-        if(linha.numero < 300){
+        if(linha.numero <= 300){
           color = 'primary'
         }else if(linha.numero < 600 && linha.numero > 300){
           color = 'negative'
@@ -238,7 +225,7 @@ export default defineComponent({
         return color;
       }else{
         linha.forEach((item)=>{
-          if(item.numero < 300){
+          if(item.numero <= 300){
             color = 'primary'
           }else if(item.numero < 600 && item.numero > 300){
             color = 'negative'
@@ -259,6 +246,7 @@ export default defineComponent({
     let showBar = false;
     let focusSerachBar = false;
     let tamanhoTexto = 1;
+
 
     if(window.localStorage.getItem('favoritos')){
       dadosLocalStorage = JSON.parse(window.localStorage.getItem('favoritos') as string);
