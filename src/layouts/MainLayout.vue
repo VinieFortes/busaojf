@@ -30,17 +30,17 @@
           </template>
         </q-slider>
       </div>
-      <div class="q-mb-xl flex column">
-        <span class="q-pa-sm">Gostou do App ? Então avalie-o na Play Store!</span>
-        <a style="text-decoration: none" href="https://play.google.com/store/apps/details?id=com.vinie4app.busaojf" class="flex">
-          <q-btn style="flex: 1" color="primary" icon="reviews" label="Avaliar"></q-btn>
-        </a>
-      </div>
+<!--      <div class="q-mb-xl flex column">-->
+<!--        <span class="q-pa-sm">Gostou do App ? Então avalie-o na Play Store!</span>-->
+<!--        <a style="text-decoration: none" href="https://play.google.com/store/apps/details?id=com.vinie4app.busaojf" class="flex">-->
+<!--          <q-btn style="flex: 1" color="primary" icon="reviews" label="Avaliar"></q-btn>-->
+<!--        </a>-->
+<!--      </div>-->
       <q-space/>
-      <span class="q-pa-sm">Acesse nosso site:</span>
-      <q-btn color="primary" label="Busão Nacional" icon="directions_bus" @click="goToSite">
+<!--      <span class="q-pa-sm">Acesse nosso site:</span>-->
+<!--      <q-btn color="primary" label="Busão Nacional" icon="directions_bus" @click="goToSite">-->
 
-      </q-btn>
+<!--      </q-btn>-->
       <div class="flex justify-end items-end column q-pa-sm">
         <div class="items-end q-gutter-x-sm">
           <span>Feito por Vinie Fortes</span>
