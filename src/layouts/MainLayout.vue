@@ -49,7 +49,7 @@
           </a>
         </div>
       </div>
-      <span class="q-mb-xl q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Janeiro de 2024</span>
+      <span class="q-mb-xl q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Fevereiro de 2024</span>
     </q-drawer>
 
     <q-page-container class="q-mb-md">
