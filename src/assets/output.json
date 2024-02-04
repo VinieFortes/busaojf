@@ -1591,37 +1591,75 @@
                         "05:30",
                         "06:10",
                         "06:35",
-                        "08:00",
-                        "10:30",
-                        "13:05",
-                        "14:15",
-                        "15:40",
-                        "16:45",
-                        "18:20",
-                        "19:15",
-                        "21:10"
+                        "07:55",
+                        "10:25",
+                        "13:00",
+                        "14:30",
+                        "15:35",
+                        "17:00",
+                        "18:15",
+                        "19:30",
+                        "21:05",
+                        "22:00"
                     ],
-                    "sabado": [],
-                    "domingo": []
+                    "sabado": [
+                        "05:40",
+                        "08:00",
+                        "10:20",
+                        "12:40",
+                        "15:00",
+                        "17:20",
+                        "19:40",
+                        "22:00"
+                    ],
+                    "domingo": [
+                        "05:40",
+                        "08:00",
+                        "10:20",
+                        "12:40",
+                        "15:00",
+                        "17:20",
+                        "19:40",
+                        "22:00"
+                    ]
                 }
             ],
             "H_volta": [
                 {
                     "semana": [
-                        "06:45",
+                        "06:35",
                         "07:50",
-                        "09:15",
-                        "11:50",
-                        "14:25",
-                        "15:30",
-                        "17:00",
-                        "18:00",
-                        "19:50",
-                        "20:30",
-                        "22:30"
+                        "09:10",
+                        "11:45",
+                        "14:20",
+                        "15:45",
+                        "16:55",
+                        "18:15",
+                        "19:45",
+                        "20:45",
+                        "22:25",
+                        "23:20"
                     ],
-                    "sabado": [],
-                    "domingo": []
+                    "sabado": [
+                        "06:50",
+                        "09:10",
+                        "11:30",
+                        "13:50",
+                        "16:10",
+                        "18:30",
+                        "20:50",
+                        "23:10"
+                    ],
+                    "domingo": [
+                        "06:50",
+                        "09:10",
+                        "11:30",
+                        "13:50",
+                        "14:10",
+                        "18:30",
+                        "20:50",
+                        "23:10"
+                    ]
                 }
             ],
             "intinerario": [
@@ -3346,7 +3384,7 @@
             ],
             "intinerario": [
                 {
-                    "ida": "Rua Antônio de Paula Mendes nº 727 Ponto Final,Rua Sargento Cunha,Rua Paracatu,Avenida Barão do Rio Branco (Via Garganta do Dilermando),Praça Mozart Geraldo Teixeira,Rua Dom Silvério,Rua Chácara,Rua Ibitiguaia,Avenida Darcy Vargas,Rua Clóvis Seroa da Motta,Rua José Carvalho Dias,Rua Yolanda Bragagnolo,Rua Clóvis Seroa da Motta,Rua Manoel Barbosa Leite - até o viradouro e retorna,Rua Clóvis Seroa da Motta,Rua Nery de Mendonça,Rua Yolanda Bragagnolo,Rua José Carvalho Dias,Rua Clóvis Seroa da Motta,Rua Francisco Pereira da Fonseca,Rua João DAgosto ,Rua Paulo Lana Barroso,Rua Walter de Macedo Coimbra(antiga Rua G) S/N Ponto Final.",
+                    "ida": "Rua Antônio de Paula Mendes nº 727 Ponto Final,Rua Sargento Cunha,Rua Paracatu,Avenida Barão do Rio Branco (Via Garganta do Dilermando),Praça Mozart Geraldo Teixeira,Rua Dom Silvério,Rua Chácara,Rua Ibitiguaia,Avenida Darcy Vargas,Rua Antônio Bento de Vaconcellos,Rua Albino Bento de Vasconcellos,Rua Clóvis Seroa da Motta,Rua José Carvalho Dias,Rua Yolanda Bragagnolo,Rua Clóvis Seroa da Motta,Rua Manoel Barbosa Leite - até o viradouro e retorna,Rua Clóvis Seroa da Motta,Rua Nery de Mendonça,Rua Yolanda Bragagnolo,Rua José Carvalho Dias,Rua Clóvis Seroa da Motta,Rua Francisco Pereira da Fonseca,Rua João DAgosto ,Rua Paulo Lana Barroso,Rua Walter de Macedo Coimbra(antiga Rua G) S/N Ponto Final.",
                     "volta": "Rua Walter de Macedo Coimbra(antiga Rua G) S/N Ponto Final,Rua Paulo Lana Barroso,Rua João DAgosto,Rua Francisco Pereira da Fonseca,Rua Clóvis Seroa da Motta,Avenida Darcy Vargas,Rua Francisco Altomar,Rua Tereza Nogueira Dos Santos,Rua Ibitiguaia,Avenida Santa Luzia,Rua Água Limpa,Rua Chácara,Rua Dom Silvério,Rua Barão de Aquino,Rua Belmiro Braga,Praça Mozart Geraldo Teixeira,Avenida Barão do Rio Branco (Via Garganta do Dilermando),Rua Paracatu,Rua Sargento Cunha,Rua Sabino Francisco de Barros,Rua Antônio de Paula Mendes nº 727 Ponto Final.Extensão ao Previdenciários:..., Rua Clóvis Seroa da Mota, Rua Reginaldo Vasconcelos, Rua Antônio Bento Vasconcelos, Rua Horácio Alberto de Assis, Rua Airton Ribeiro, Rua Haroldo Furtado Vidal, Rua Antônio Bento Vasconcelos, Rua Clóvis Seroa da Mota, ..."
                 }
             ]
@@ -9610,8 +9648,8 @@
             ],
             "intinerario": [
                 {
-                    "ida": "Rua Boanerges Barbosa de Castro – Ponto Final, Rua Adairo Martins Rúbio, Rua Milton Coelho Marques, Av. Fernando Senra,561 ( sentido Rua Ilva Melo Reis – Realizando retorno pela pista oposta), Rua Orides Militão da Costa, Rua Hélio Gonçalves, Av. Fernando Senra, Rua Geraldo Dias Passos, Alameda Ilva Melo Reis, BR-267, Avenida Francisco Alvares Assis, Trevo Bicas, Estrada União Indústria, Avenida Francisco Valadares, Rua Osório de Almeida, Rua Pinto de Moura, Rua da Bahia, Rua João Pessoa de Rezende, Avenida Francisco Bernardino, Rua São Sebastião nº 432 - Ponto Final.",
-                    "volta": "Rua São Sebastião nº 432 - Ponto Final, Avenida Presidente Getúlio Vargas, Rua Espírito Santo, Rua Osório de Almeida, Avenida Francisco Valadares, Estrada União Indústria, Trevo de Bicas, Avenida Francisco Alvares de Assis (BR 267), Trevo Caeté, BR-267, Alameda Ilva Melo Reis, Rua Padre João Micheleto, Rua Geraldo Dias Passos, Av. Fernando Senra, Rua Hélio Gonçalves (R. 16), Rua Orides Militão da Costa (R. 17),  Av. Fernando Senra,561 ( sentido Rua Ilva Melo Reis – Realizando retorno pela pista oposta), Rua Milton Coelho Marques, Rua Nicolau Lammoglia, Rua José Pires de Freitas, Rua Iraide Kneipp Climaco, Rua Expedicionário Ferreira Cristino, Rua Eng. Francisco D’Agosto, Rua Boanerges Barbosa de Castro – Ponto Final."
+                    "ida": "Rua Boanerges Barbosa de Castro – Ponto Final, Rua Iraide Kneipp Climaco, Rua Expedicionário Arlindo Ferreira Cristino (sentido Rua Ilva Melo Reis), Rua Francisco de Cerqueira Cruzeiro, Rua Nossa Senhora de Lourdes, Rua Padre Guilherme, Rua Inácio Gama, Av. Brasil, Ponte Antônio Carlos, Viaduto Augusto Franco, Rua Angelo Falci,  Avenida Francisco Bernardino, Rua São Sebastião nº 432 - Ponto Final.",
+                    "volta": "Rua São Sebastião nº 432 - Ponto Final, Avenida Presidente Getúlio Vargas, Viaduto Augusto Franco, Av. Brasil, Ponte Luiz Ernesto Bernardino Alves Filho, A. Brasil, Rua Nossa Senhora de Lourdes, Rua Francisco de Cequeira Cruzeiro, Alameda Ilva Melo Reis, Rua Padre João Micheleto, Rua Geraldo Dias Passos, Av. Fernando Senra, Rua Hélio Gonçalves (R. 16), Rua Orides Militão da Costa (R. 17), Ponte Córrego Retiro,  Av. Fernando Senra, Rua Geraldo Dias Passos, Rua Farmacéutico José Fontes Lourenço, Av. Fernando Senra, Rua Miltom Coelho Marquês, Rua Nicolau Lammoglia até o final e retorna, Rua Iraide Kneipp Climaco, Rua Expedicionário Arlindo Ferreira Cristino, Rua José Silveira da Rosa, Rua Boanerges Barbosa de Castro – Ponto Final."
                 }
             ]
         }
@@ -10474,16 +10512,110 @@
             "nome": "Solidariedade / Via Vila Ideal",
             "H_ida": [
                 {
-                    "semana": [],
-                    "sabado": [],
-                    "domingo": []
+                    "semana": [
+                        "05:10",
+                        "06:25",
+                        "07:40",
+                        "08:55",
+                        "10:10",
+                        "11:25",
+                        "12:40",
+                        "13:55",
+                        "15:10",
+                        "16:25",
+                        "17:40",
+                        "18:55",
+                        "20:10",
+                        "21:25",
+                        "22:30"
+                    ],
+                    "sabado": [
+                        "05:10",
+                        "06:25",
+                        "07:40",
+                        "08:55",
+                        "10:10",
+                        "11:25",
+                        "12:40",
+                        "13:55",
+                        "15:10",
+                        "16:25",
+                        "17:40",
+                        "18:55",
+                        "20:10",
+                        "21:25",
+                        "22:30"
+                    ],
+                    "domingo": [
+                        "06:50",
+                        "08:00",
+                        "09:10",
+                        "10:20",
+                        "11:30",
+                        "12:40",
+                        "13:50",
+                        "15:00",
+                        "16:10",
+                        "17:20",
+                        "18:30",
+                        "19:40",
+                        "20:50",
+                        "21:50"
+                    ]
                 }
             ],
             "H_volta": [
                 {
-                    "semana": [],
-                    "sabado": [],
-                    "domingo": []
+                    "semana": [
+                        "05:48",
+                        "07:03",
+                        "08:18",
+                        "09:33",
+                        "10:48",
+                        "12:03",
+                        "13:18",
+                        "14:33",
+                        "15:48",
+                        "17:03",
+                        "18:18",
+                        "19:33",
+                        "20:48",
+                        "21:55",
+                        "23:00"
+                    ],
+                    "sabado": [
+                        "05:48",
+                        "07:03",
+                        "08:18",
+                        "09:33",
+                        "10:48",
+                        "12:03",
+                        "13:18",
+                        "14:33",
+                        "15:48",
+                        "17:03",
+                        "18:18",
+                        "19:33",
+                        "20:48",
+                        "21:55",
+                        "23:00"
+                    ],
+                    "domingo": [
+                        "07:25",
+                        "08:35",
+                        "09:45",
+                        "10:55",
+                        "12:05",
+                        "13:15",
+                        "14:25",
+                        "15:35",
+                        "16:45",
+                        "17:55",
+                        "19:05",
+                        "20:15",
+                        "21:20",
+                        "22:20"
+                    ]
                 }
             ],
             "intinerario": [
@@ -16293,6 +16425,176 @@
     ],
     [
         {
+            "numero": 448,
+            "nome": "Vila Alpina via Vitorino Braga",
+            "H_ida": [
+                {
+                    "semana": [
+                        "06:00",
+                        "06:40",
+                        "07:25",
+                        "08:10",
+                        "09:00",
+                        "09:50",
+                        "10:40",
+                        "11:30",
+                        "12:20",
+                        "13:10",
+                        "14:00",
+                        "14:50",
+                        "15:40",
+                        "16:30",
+                        "17:20",
+                        "18:10",
+                        "19:00",
+                        "19:50",
+                        "20:40",
+                        "21:25",
+                        "22:10",
+                        "22:55",
+                        "23:35"
+                    ],
+                    "sabado": [
+                        "06:00",
+                        "06:40",
+                        "07:25",
+                        "08:10",
+                        "09:00",
+                        "09:50",
+                        "10:40",
+                        "11:30",
+                        "12:20",
+                        "13:10",
+                        "14:00",
+                        "14:50",
+                        "15:40",
+                        "16:30",
+                        "17:20",
+                        "18:10",
+                        "19:00",
+                        "19:50",
+                        "20:40",
+                        "21:25",
+                        "22:10",
+                        "22:55",
+                        "23:35"
+                    ],
+                    "domingo": [
+                        "06:00",
+                        "06:40",
+                        "07:25",
+                        "08:10",
+                        "09:00",
+                        "09:50",
+                        "10:40",
+                        "11:30",
+                        "12:20",
+                        "13:10",
+                        "14:00",
+                        "14:50",
+                        "15:40",
+                        "16:30",
+                        "17:20",
+                        "18:10",
+                        "19:00",
+                        "19:50",
+                        "20:40",
+                        "21:25",
+                        "22:10",
+                        "22:55",
+                        "23:35"
+                    ]
+                }
+            ],
+            "H_volta": [
+                {
+                    "semana": [
+                        "06:15",
+                        "07:00",
+                        "07:45",
+                        "08:30",
+                        "09:20",
+                        "10:10",
+                        "11:00",
+                        "11:50",
+                        "12:40",
+                        "13:30",
+                        "14:20",
+                        "15:10",
+                        "16:00",
+                        "16:50",
+                        "17:40",
+                        "18:30",
+                        "19:20",
+                        "20:10",
+                        "21:00",
+                        "21:45",
+                        "22:30",
+                        "23:15",
+                        "23:55"
+                    ],
+                    "sabado": [
+                        "06:15",
+                        "07:00",
+                        "07:45",
+                        "08:30",
+                        "09:20",
+                        "10:10",
+                        "11:00",
+                        "11:50",
+                        "12:40",
+                        "13:30",
+                        "14:20",
+                        "15:10",
+                        "16:00",
+                        "16:50",
+                        "17:40",
+                        "18:30",
+                        "19:20",
+                        "20:10",
+                        "21:00",
+                        "21:45",
+                        "22:30",
+                        "23:15",
+                        "23:55"
+                    ],
+                    "domingo": [
+                        "06:15",
+                        "07:00",
+                        "07:45",
+                        "08:30",
+                        "09:20",
+                        "10:10",
+                        "11:00",
+                        "11:50",
+                        "12:40",
+                        "13:30",
+                        "14:20",
+                        "15:10",
+                        "16:00",
+                        "16:50",
+                        "17:40",
+                        "18:30",
+                        "19:20",
+                        "20:10",
+                        "21:00",
+                        "21:45",
+                        "22:30",
+                        "23:15",
+                        "23:55"
+                    ]
+                }
+            ],
+            "intinerario": [
+                {
+                    "ida": "Rua Lambari-Praça (Ponto Final), Rua Eurico Viana, Rua Antônio Pedro Félix, Rua Caxambú, Rua Eurico Viana, Rua Clorindo Burnier, Rua São José, Rua Vitorino Braga, Avenida Garibaldi Campinhos, Rua Beijamim Costant, Rua Jarbas de Levy Santos, Avenida Presidente Getúlio Vargas, 831 (Ponto Final)",
+                    "volta": "Avenida Presidente Getúlio Vargas nº 825 - ponto final, Praça Antônio Carlos, Viaduto Augusto Franco, Avenida Brasil(MD), Ponto Nelson Silva, Avenida Brasil(ME), Avenida Garibaldi Campinhos, Rua Professor Lander, Rua do Monte, Rua Vitorino Braga, Rua São José, Rua Clorindo Burnier, Rua Doutor Eurico Viana, Rua Geraldo José Moreira, Rua Joaquim Gonçalves Ledo, Rua Luzia dos Santos, Carriço, Rua Sebastião Costa, Rua Domingos Adão, Rua Cruz e Souza, Rua Agilberto Costa, Rua José Zacarias dos Santos (UBS), Rua Lambari - Praça (Ponto Final)  "
+                }
+            ]
+        }
+    ],
+    [
+        {
             "numero": 499,
             "nome": "Linhares / Santo Antônio",
             "H_ida": [
@@ -16446,65 +16748,15 @@
             "nome": "Paineras",
             "H_ida": [
                 {
-                    "semana": [
-                        "06:20",
-                        "07:35",
-                        "08:50",
-                        "10:05",
-                        "11:20",
-                        "12:35",
-                        "13:50",
-                        "15:05",
-                        "16:20",
-                        "17:35",
-                        "18:50",
-                        "20:05"
-                    ],
-                    "sabado": [
-                        "06:30",
-                        "07:45",
-                        "09:00",
-                        "10:15",
-                        "11:30",
-                        "12:45",
-                        "14:00",
-                        "15:15",
-                        "16:30",
-                        "17:45",
-                        "19:00"
-                    ],
+                    "semana": [],
+                    "sabado": [],
                     "domingo": []
                 }
             ],
             "H_volta": [
                 {
-                    "semana": [
-                        "06:55",
-                        "08:10",
-                        "09:25",
-                        "10:40",
-                        "11:55",
-                        "13:10",
-                        "14:25",
-                        "15:40",
-                        "16:55",
-                        "18:10",
-                        "19:25",
-                        "20:40"
-                    ],
-                    "sabado": [
-                        "07:05",
-                        "08:20",
-                        "09:35",
-                        "10:50",
-                        "12:05",
-                        "13:20",
-                        "14:35",
-                        "15:50",
-                        "17:05",
-                        "18:20",
-                        "19:35"
-                    ],
+                    "semana": [],
+                    "sabado": [],
                     "domingo": []
                 }
             ],
@@ -16713,7 +16965,7 @@
             "intinerario": [
                 {
                     "ida": "Rua Doutor José Claro Dias com Rua Silvério da Silveira,Rua Silvério da Silveira,Rua Nossa Sra. Imaculada Conceição,Rua Antônio Marinho Saraiva,Avenida Presidente Itamar Franco,Rua Doutor Romualdo,Avenida Barão do Rio Branco,Rua Silva Jardim - Ponto Final.",
-                    "volta": "Rua Silva Jardim - Ponto Final,Rua Barão de Cataguases,Rua Olegário Maciel,Rua Belo Horizonte,Rua Cândido Tostes,Rua Padre Café,Rua São Mateus,Ladeira Alexandre Leonel,Praça Antônio Carlos Saraiva (Trevo do Teixeiras),Avenida Deusdedith Salgado,Rua Joaquim DAlmeida,Rua José de Castro Barbosa,Rua General Mário Xavier,Rua Nair Furtado de Souza,Rua Oscavo Gonzaga Prata até o viradouro no final da rua e retorna,Rua Oscavo Gonzaga Prata,Rua Antônio Carlos Saraiva (Trevo do Teixeiras),Av. Doutor Paulo Japiassu Coelho,Avenida Presidente Itamar Franco,Rua Vicente Beguelli,Rua Nossa Sra. Imaculada Conceição,Rua Silvério da Silveira,Rua José Claro Dias - Ponto Final. "
+                    "volta": "Rua Silva Jardim - Ponto Final,Av. Francisco Bernardino,Rua Barão de Cataguases,Rua Olegário Maciel,Rua Belo Horizonte,Rua Cândido Tostes,Rua Padre Café,Rua São Mateus,Ladeira Alexandre Leonel,Praça Antônio Carlos Saraiva (Trevo do Teixeiras),Rua Paulo Japiassú Coelho,Rua Miguel José Mansur,Rua Ministro Amarílio Lopes Salgado,Rua Tom Fagunfes,Rua Paulo Japiassú Coelho,Praça Antônio Carlos Saraiva (Trevo do Teixeiras),Rua Joaquim de D’Almeida,Rua José de Castro Barbosa,Rua Gen. Mário Xaxier,Rua Nair Furtado de Souza,Rua Oscavo Gonzaga Prata até o viradouro no final da rua e retorna,Praça Antônio Carlos Saraiva (Trevo do Teixeiras),Rua Paulo Japiassú Coelho,Praça José Gattas Bara,Av. Presidente Itamar Franco,Rua Vicente Beguelli,Rua Nossa Senhora Imaculada Conceição,Rua Silvério da Silveira,Rua José Claro Dias - Ponto Final."
                 }
             ]
         }
@@ -17088,6 +17340,141 @@
                 {
                     "ida": "Rua Engenheiro Waldyr Pedro Monachesi s/n Ponto Final,Avenida Eugênio do Nascimento,Avenida Presidente Itamar Franco,Rua Vicente Beghelli,Rua Imaculada Conceição,Rua João Manata,Rua Monsenhor Gustavo Freire,Avenida Presidente Itamar Franco,Rua Doutor Romualdo,Avenida Barão do Rio Branco,Rua Silva Jardim,Avenida Francisco Bernardino,Rua Barão de Cataguases,Avenida dos Andradas,Rua Professora Violeta dos Santos,Avenida Vereador Laudelino Schetino,                         Rua Benjamin Guimarães,                        Rua Antônio Fellet,Rua Júlio Menini,Rua Tenente Paulo Maria Delage,Rua Irmão Menrado,Rua Humberto Menini nº320 Ponto Final.                                       ",
                     "volta": "Rua Humberto Menini nº320 Ponto Final,Rua Irmão Menrado,Rua Tenente Paulo Maria Delage,Rua Júlio Menini,Rua Antônio Fellet,Rua Benjamin Guimarães,Rua Christovam Molinari,Avenida dos Andradas,Rua Silva Jardim,Avenida Barão do Rio Branco,Avenida Presidente Itamar Franco,Rua Monsenhor Gustavo Freire,Rua Benedito dos R. Fortes,Rua Olegário Maciel,Rua Monsenhor Gustavo Freire,Rua João Manata,Rua Imaculada Conceição,Rua Vicente Beghelli,Avenida Presidente Itamar Franco,Avenida Eugênio do Nascimento,Via Local até o CAS-HU e retorna,Avenida Eugênio do Nascimento,Rua Engenheiro Waldyr Pedro Monachesi s/n Ponto Final.Extensão até a Rua Engenheiro Waldyr Pedro Monachesi:Avenida Eugênio do Nascimento,Rua Engenheiro Waldyr Pedro Monachesi nº645 - Trevo e retorna até o Ponto Final.Extensão até o Sindicato dos Bancários:Avenida Presidente Itamar Franco,Avenida Eugênio do Nascimento nº5015 e retorna,Rua Engenheiro Waldyr Pedro Monachesi s/n Ponto Final."
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "numero": 513,
+            "nome": "Borboleta / Centro",
+            "H_ida": [
+                {
+                    "semana": [
+                        "00:25",
+                        "05:25",
+                        "06:15",
+                        "07:20",
+                        "08:25",
+                        "09:30",
+                        "10:35",
+                        "11:40",
+                        "13:05",
+                        "14:30",
+                        "15:35",
+                        "16:40",
+                        "17:45",
+                        "18:50",
+                        "19:55",
+                        "20:50",
+                        "21:45",
+                        "22:40",
+                        "23:35"
+                    ],
+                    "sabado": [
+                        "05:25",
+                        "06:15",
+                        "07:20",
+                        "08:25",
+                        "09:30",
+                        "10:35",
+                        "11:40",
+                        "13:05",
+                        "14:30",
+                        "15:35",
+                        "16:40",
+                        "17:45",
+                        "18:50",
+                        "19:55",
+                        "20:50",
+                        "21:45",
+                        "22:40",
+                        "23:35"
+                    ],
+                    "domingo": [
+                        "06:15",
+                        "07:20",
+                        "08:25",
+                        "09:30",
+                        "10:35",
+                        "11:40",
+                        "13:05",
+                        "14:30",
+                        "15:35",
+                        "16:40",
+                        "17:45",
+                        "18:50",
+                        "19:55",
+                        "20:50",
+                        "21:45",
+                        "22:40"
+                    ]
+                }
+            ],
+            "H_volta": [
+                {
+                    "semana": [
+                        "00:00",
+                        "05:50",
+                        "06:45",
+                        "07:50",
+                        "08:55",
+                        "10:00",
+                        "11:05",
+                        "12:20",
+                        "13:45",
+                        "15:00",
+                        "16:05",
+                        "17:10",
+                        "18:15",
+                        "19:20",
+                        "20:20",
+                        "21:15",
+                        "22:10",
+                        "23:05"
+                    ],
+                    "sabado": [
+                        "05:50",
+                        "06:45",
+                        "07:50",
+                        "08:55",
+                        "10:00",
+                        "11:05",
+                        "12:20",
+                        "13:45",
+                        "15:00",
+                        "16:05",
+                        "17:10",
+                        "18:15",
+                        "19:20",
+                        "20:20",
+                        "21:25",
+                        "22:10",
+                        "23:05"
+                    ],
+                    "domingo": [
+                        "06:45",
+                        "07:50",
+                        "08:55",
+                        "10:00",
+                        "11:05",
+                        "12:20",
+                        "13:45",
+                        "15:00",
+                        "16:05",
+                        "17:10",
+                        "18:15",
+                        "19:20",
+                        "20:20",
+                        "21:15",
+                        "22:10"
+                    ]
+                }
+            ],
+            "intinerario": [
+                {
+                    "ida": "Rua Pedro Vanderpol n° 694 – Ponto Final, Rua Humberto Menini, Rua Josefina Lawal Surerus, Rua Dr. Euvaldo Lodi até o final e retorna, Rua São Cosme, Rua José Lourenço, Rua Júlio Menini, Rua Antônio Fellet, Rua Benjamim Guimarães, Rua Cristovan Molinari, Av. dos Andradas, Av. Barão do Rio Branco, Rua Afonso Pinto da Mota, Av. Getúlio Vargas n°301 - Ponto Final.",
+                    "volta": "Av. Getúlio Vargas n°301 - Ponto Final, Avenida Presidente Itamar Franco, Avenida Barão do Rio Branco, Rua Silva Jardim, Avenida Francisco Bernardino, Rua Barão de Cataguases, Avenida dos Andradas, Rua Engenheiro José Carlos Morais Sarmento, Rua Catulo Breviliglery. Rua Antônio Fellet, Rua Júlio Menini, Rua Tenente Paulo Maria Delage, Rua Simão Gabriel Sffer, Rua Humberto Menini, Rua Margarida de Lima, Rua Pedro Vanderpol n° 694 – Ponto Final."
                 }
             ]
         }
@@ -18505,57 +18892,34 @@
             "H_ida": [
                 {
                     "semana": [
-                        "06:37",
-                        "07:03",
-                        "07:20",
-                        "07:42",
-                        "08:08",
-                        "08:25",
-                        "08:43",
-                        "09:13",
-                        "09:32",
-                        "09:50",
-                        "10:20",
-                        "10:39",
-                        "10:57",
-                        "11:27",
-                        "11:46",
-                        "12:04",
-                        "12:34",
-                        "12:53",
-                        "13:11",
-                        "13:41",
-                        "14:00",
-                        "14:18",
-                        "14:48",
-                        "15:07",
-                        "15:25",
-                        "15:55",
-                        "16:14",
-                        "16:32",
-                        "17:02",
-                        "17:21",
-                        "17:39",
-                        "18:09",
-                        "18:28",
-                        "18:46",
-                        "19:16",
-                        "19:35",
-                        "20:23",
-                        "20:42",
-                        "21:30",
-                        "21:49",
-                        "22:37",
-                        "23:05"
+                        "06:50",
+                        "08:10",
+                        "09:30",
+                        "10:50",
+                        "12:10",
+                        "13:30",
+                        "14:50",
+                        "16:10",
+                        "17:30",
+                        "18:50",
+                        "20:10",
+                        "21:25",
+                        "22:35"
                     ],
                     "sabado": [
-                        "06:00",
-                        "07:10",
-                        "07:55",
-                        "08:15",
-                        "09:20",
-                        "10:25",
-                        "11:30"
+                        "06:50",
+                        "08:10",
+                        "09:30",
+                        "10:50",
+                        "12:10",
+                        "13:30",
+                        "14:50",
+                        "16:10",
+                        "17:30",
+                        "18:50",
+                        "20:10",
+                        "21:25",
+                        "22:35"
                     ],
                     "domingo": []
                 }
@@ -18563,59 +18927,34 @@
             "H_volta": [
                 {
                     "semana": [
-                        "06:09",
-                        "06:35",
-                        "06:52",
-                        "07:10",
-                        "07:33",
-                        "07:50",
-                        "08:08",
-                        "08:38",
-                        "08:57",
-                        "09:15",
-                        "09:45",
-                        "10:04",
-                        "10:22",
-                        "10:52",
-                        "11:11",
-                        "11:29",
-                        "11:59",
-                        "12:18",
-                        "12:36",
-                        "13:06",
-                        "13:25",
-                        "13:43",
-                        "14:13",
-                        "14:32",
-                        "14:50",
-                        "15:20",
-                        "15:39",
-                        "15:57",
-                        "16:27",
-                        "16:46",
-                        "17:04",
-                        "17:34",
-                        "17:53",
-                        "18:11",
-                        "18:41",
-                        "19:00",
-                        "19:18",
-                        "19:48",
-                        "20:07",
-                        "20:55",
-                        "21:14",
-                        "22:02",
-                        "22:21"
+                        "06:15",
+                        "07:35",
+                        "08:55",
+                        "10:15",
+                        "11:35",
+                        "12:55",
+                        "14:15",
+                        "15:35",
+                        "16:55",
+                        "18:15",
+                        "19:35",
+                        "20:50",
+                        "22:05"
                     ],
                     "sabado": [
-                        "06:30",
-                        "07:20",
-                        "07:40",
-                        "08:25",
-                        "08:45",
-                        "09:50",
-                        "10:55",
-                        "12:00"
+                        "06:15",
+                        "07:35",
+                        "08:55",
+                        "10:15",
+                        "11:35",
+                        "12:55",
+                        "14:15",
+                        "15:35",
+                        "16:55",
+                        "18:15",
+                        "19:35",
+                        "20:50",
+                        "22:05"
                     ],
                     "domingo": []
                 }
@@ -19213,34 +19552,35 @@
             "H_ida": [
                 {
                     "semana": [
-                        "05:00",
+                        "04:50",
                         "05:40",
-                        "06:20",
+                        "06:15",
                         "06:50",
                         "07:10",
-                        "08:00",
+                        "07:50",
                         "08:30",
                         "08:50",
-                        "09:40",
+                        "09:30",
                         "10:30",
-                        "11:20",
+                        "11:10",
                         "12:10",
-                        "13:00",
+                        "12:50",
                         "13:50",
-                        "14:40",
+                        "14:30",
                         "15:30",
-                        "16:20",
-                        "17:05",
+                        "16:10",
                         "17:20",
-                        "18:10",
-                        "18:55",
+                        "17:40",
+                        "18:00",
                         "19:10",
-                        "20:00",
-                        "21:40",
-                        "23:10"
+                        "19:30",
+                        "19:50",
+                        "21:30",
+                        "23:00"
                     ],
                     "sabado": [
                         "05:00",
+                        "05:40",
                         "06:20",
                         "06:50",
                         "08:00",
@@ -19269,6 +19609,7 @@
                     ],
                     "domingo": [
                         "05:00",
+                        "05:40",
                         "06:20",
                         "06:50",
                         "08:00",
@@ -19300,31 +19641,31 @@
             "H_volta": [
                 {
                     "semana": [
-                        "05:40",
+                        "05:30",
                         "06:20",
-                        "07:10",
+                        "06:55",
                         "07:40",
                         "08:00",
-                        "08:50",
+                        "08:40",
                         "09:20",
                         "09:40",
-                        "10:30",
+                        "10:20",
                         "11:20",
-                        "12:10",
+                        "12:00",
                         "13:00",
-                        "13:50",
+                        "13:40",
                         "14:40",
-                        "15:30",
+                        "15:20",
                         "16:20",
-                        "17:10",
-                        "17:55",
+                        "17:00",
                         "18:10",
-                        "19:00",
-                        "19:45",
+                        "18:30",
+                        "18:50",
                         "20:00",
-                        "20:50",
+                        "20:20",
+                        "20:40",
                         "22:20",
-                        "23:40"
+                        "23:30"
                     ],
                     "sabado": [
                         "05:40",
@@ -19832,34 +20173,34 @@
             "H_ida": [
                 {
                     "semana": [
-                        "06:35",
-                        "06:53",
-                        "07:11",
-                        "07:33",
-                        "07:51",
-                        "08:09",
-                        "08:44",
-                        "09:26",
-                        "10:42",
-                        "11:53",
-                        "13:04",
-                        "14:15",
-                        "15:26",
-                        "16:46",
-                        "18:06",
-                        "19:26",
-                        "20:46",
-                        "22:06",
-                        "23:05"
+                        "07:30",
+                        "08:50",
+                        "10:10",
+                        "11:30",
+                        "12:50",
+                        "14:10",
+                        "15:30",
+                        "16:50",
+                        "18:10",
+                        "19:30",
+                        "20:50",
+                        "22:00",
+                        "23:10"
                     ],
                     "sabado": [
-                        "06:25",
-                        "07:25",
-                        "08:25",
-                        "09:28",
-                        "10:31",
-                        "11:34",
-                        "12:37"
+                        "07:30",
+                        "08:50",
+                        "10:10",
+                        "11:30",
+                        "12:50",
+                        "14:10",
+                        "15:30",
+                        "16:50",
+                        "18:10",
+                        "19:30",
+                        "20:50",
+                        "22:00",
+                        "23:10"
                     ],
                     "domingo": []
                 }
@@ -19867,34 +20208,34 @@
             "H_volta": [
                 {
                     "semana": [
-                        "06:13",
-                        "06:31",
-                        "06:49",
-                        "07:07",
-                        "07:25",
-                        "07:43",
-                        "08:18",
-                        "08:54",
-                        "10:11",
-                        "11:27",
-                        "12:38",
-                        "13:49",
-                        "15:00",
-                        "16:16",
-                        "17:36",
-                        "18:56",
-                        "20:16",
-                        "21:36",
-                        "22:35"
+                        "06:55",
+                        "08:15",
+                        "09:35",
+                        "10:55",
+                        "12:15",
+                        "13:35",
+                        "14:55",
+                        "16:15",
+                        "17:35",
+                        "18:55",
+                        "20:15",
+                        "21:30",
+                        "22:40"
                     ],
                     "sabado": [
-                        "07:00",
-                        "08:00",
-                        "09:03",
-                        "10:06",
-                        "11:09",
-                        "12:12",
-                        "13:12"
+                        "06:55",
+                        "08:15",
+                        "09:35",
+                        "10:55",
+                        "12:15",
+                        "13:35",
+                        "14:55",
+                        "16:15",
+                        "17:35",
+                        "18:55",
+                        "20:15",
+                        "21:30",
+                        "22:40"
                     ],
                     "domingo": []
                 }
@@ -19986,7 +20327,7 @@
             "intinerario": [
                 {
                     "ida": "Rua Fortaleza s/n Ponto Final,Rua Brasília,Rua Florianópolis,Rua Cuiabá,Rua Maceió,Rua Porto Alegre,Rua das Petúnias,Rua das Margaridas,Rua dos Pinheirais,Rua da Hortência,Rua das Margaridas,Rua das Rosas,Rua Otília de Souza Leal,Rua Acácio Alves Alvim,Rua Professor José Vilas Bouçada,Rua Álvaro José Rodrigues,Rua Liduino Vieira dos Reis,Rua José Apolônio dos Reis,Rua Álvaro José Rodrigues,Avenida Eugênio do Nascimento,Rua Guilherme de Almeida,Rua Elói Américo Mendes,Rua Francisco Baptista de Oliveira,Rua Judith de Paula,Rua Guido Monachesi,Rua Francisco Baptista de Oliveira,Avenida Eugênio do Nascimento,Rua Francisco Fayer Sobrinho,Avenida Engenheiro Waldyr Pedro Monachesi,Avenida Eugênio do Nascimento,Avenida Presidente Itamar Franco,Rua Vicente Beghelli,Rua Monsenhor Gustavo Freire,Avenida Presidente Itamar Franco,Rua Doutor Romualdo,Avenida Barão do Rio Branco,Rua Silva Jardim s/n Ponto Final.",
-                    "volta": "Rua Silva Jardim s/n Ponto Final,Avenida Barão do Rio Branco,Avenida Presidente Itamar Franco,Rua Monsenhor Gustavo Freire,Rua Benedito dos Reis Fortes,Rua Olegário Maciel,Rua Monsenhor Gustavo Freire,Rua Vicente Beghelli,Avenida Presidente Itamar Franco,Avenida Eugênio do Nascimento,Avenida Engenheiro Waldyr Pedro Monachesi,Rua Francisco Fayer Sobrinho,Avenida Eugênio do Nascimento,Rua Francisco Baptista de Oliveira,Rua Guido Monachesi,Rua Judith de Paula,Rua Francisco Baptista de Oliveira,Rua Elói Américo Mendes,Rua Guilherme de Almeida,Avenida Eugênio do Nascimento,Avenida Paulo Botti,Rua José Apolônio dos Reis,Rua Liduino Vieira dos Reis,Rua Álvaro José Rodrigues,Rua Professor José Vilas Bouçada,Rua Acácio Alves Alvim,Rua Otília de Souza Leal,Rua Alameda dos Ipês,Rua Nestor Vasconcelos Neto,Rua Alameda dos Manacás, Rua Florianópolis, Rua Brasília,Rua Fortaleza s/n Ponto Final."
+                    "volta": "Rua Silva Jardim s/n Ponto Final, Avenida Barão do Rio Branco, Avenida Presidente Itamar Franco, Rua Monsenhor Gustavo Freire,Rua Benedito dos Reis Fortes, Rua Olegário Maciel, Rua Monsenhor Gustavo Freire,Rua Vicente Beghelli, Avenida Presidente Itamar Franco, Avenida Eugênio do Nascimento, Avenida Engenheiro Waldyr Pedro Monachesi, Rua Francisco Fayer Sobrinho, Avenida Eugênio do Nascimento, Rua Francisco Baptista de Oliveira, Rua Guido Monachesi, Rua Judith de Paula, Rua Francisco Baptista de Oliveira, Rua Elói Américo Mendes, Rua Guilherme de Almeida, Avenida Eugênio do Nascimento, Avenida Paulo Botti,Rua José Apolônio dos Reis, Rua Liduino Vieira dos Reis, Rua Álvaro José Rodrigues, Rua Professor José Vilas Bouçada, Rua Acácio Alves Alvim, Rua Otília de Souza Leal, Rua Florianópolis, Rua Brasília, Rua Fortaleza, retornando pela Rua Brasília, Rua Natal, Rua Nestor de Vasconcelos Neto, Rua Alameda dos Ipês Nº 50 Ponto Final."
                 }
             ]
         }
@@ -26654,18 +26995,18 @@
                 {
                     "semana": [
                         "04:45",
-                        "06:13",
+                        "06:15",
                         "07:40",
-                        "09:15",
-                        "10:50",
-                        "12:25",
-                        "14:00",
-                        "15:35",
-                        "17:10",
-                        "18:45",
-                        "20:25",
-                        "21:50",
-                        "23:10"
+                        "09:10",
+                        "10:40",
+                        "12:20",
+                        "13:50",
+                        "15:20",
+                        "17:00",
+                        "18:50",
+                        "20:30",
+                        "22:00",
+                        "23:25"
                     ],
                     "sabado": [
                         "04:45",
@@ -26702,19 +27043,19 @@
             "H_volta": [
                 {
                     "semana": [
-                        "05:18",
-                        "06:46",
+                        "05:15",
+                        "06:50",
                         "08:15",
-                        "09:50",
-                        "11:25",
-                        "13:00",
-                        "14:35",
-                        "16:10",
+                        "09:45",
+                        "11:15",
+                        "12:55",
+                        "14:25",
+                        "15:55",
                         "17:45",
-                        "19:20",
-                        "20:55",
-                        "22:20",
-                        "23:40"
+                        "19:25",
+                        "21:05",
+                        "22:35",
+                        "23:55"
                     ],
                     "sabado": [
                         "05:18",
@@ -28008,22 +28349,23 @@
                         "18:00",
                         "19:40",
                         "21:15",
-                        "22:35"
+                        "22:35",
+                        "23:55"
                     ],
                     "domingo": [
                         "05:07",
                         "06:35",
                         "08:25",
-                        "09:53",
-                        "11:21",
-                        "12:49",
-                        "14:17",
-                        "15:45",
-                        "17:13",
-                        "18:41",
-                        "20:09",
-                        "21:37",
-                        "23:05"
+                        "10:00",
+                        "11:35",
+                        "13:10",
+                        "14:45",
+                        "16:20",
+                        "18:00",
+                        "19:40",
+                        "21:15",
+                        "22:35",
+                        "23:55"
                     ]
                 }
             ],
@@ -28045,6 +28387,7 @@
                         "23:05"
                     ],
                     "sabado": [
+                        "00:25",
                         "05:40",
                         "07:08",
                         "09:00",
@@ -28059,19 +28402,19 @@
                         "23:05"
                     ],
                     "domingo": [
+                        "00:25",
                         "05:40",
                         "07:08",
-                        "08:58",
-                        "10:26",
-                        "11:54",
-                        "13:22",
-                        "14:50",
-                        "16:18",
-                        "17:46",
-                        "19:14",
-                        "20:42",
-                        "22:10",
-                        "23:38"
+                        "09:00",
+                        "10:35",
+                        "12:10",
+                        "13:45",
+                        "15:20",
+                        "17:00",
+                        "18:35",
+                        "20:15",
+                        "21:45",
+                        "23:05"
                     ]
                 }
             ],

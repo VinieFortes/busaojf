@@ -1,5 +1,5 @@
 <template>
-  <q-layout>
+  <q-layout view="hHh lpR fFf">
     <q-header class="q-pa-sm flex row items-center bg-white text-black">
       <q-icon class="q-pa-sm" size="25px" name="menu" style="cursor: pointer" @click="toggleLeftDrawer"></q-icon>
       <span class="q-pl-md" v-if="!focusSearchBar" style="flex: 1; font-size: 22px">Busão JF</span>
@@ -50,7 +50,7 @@
           </a>
         </div>
       </div>
-      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Janeiro de 2024</span>
+      <span class="q-ml-md" style="font-size: medium"> Ultima Atualização dos horários: Fevereiro de 2024</span>
     </q-drawer>
 
     <q-page-container>
